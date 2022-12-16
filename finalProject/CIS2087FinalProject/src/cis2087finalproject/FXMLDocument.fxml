@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="636.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cis2087finalproject.FXMLDocumentController">
+   <children>
+      <Button fx:id="addAnimeButton" layoutX="421.0" layoutY="361.0" mnemonicParsing="false" onAction="#AddAnimeButton" prefHeight="43.0" prefWidth="134.0" text="Add Anime">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font></Button>
+      <Button fx:id="updateAnimeButton" layoutX="421.0" layoutY="433.0" mnemonicParsing="false" onAction="#updateAnimeButton" prefHeight="43.0" prefWidth="134.0" text="Update Anime">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteAnimeButton" layoutX="590.0" layoutY="433.0" mnemonicParsing="false" onAction="#deleteAnimeButton" prefHeight="43.0" prefWidth="134.0" text="Delete Anime">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="findQuoteButton" layoutX="748.0" layoutY="108.0" mnemonicParsing="false" onAction="#findQuoteButton" prefHeight="20.0" prefWidth="318.0" text="Find Quote">
+         <font>
+            <Font name="Gabriola" size="26.0" />
+         </font>
+      </Button>
+      <ListView fx:id="animeListView" layoutX="20.0" layoutY="14.0" prefHeight="597.0" prefWidth="388.0" />
+      <TextField fx:id="nameOfAnimeTextField" layoutX="423.0" layoutY="142.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="dateStartedTextField" layoutX="423.0" layoutY="231.0" prefHeight="31.0" prefWidth="207.0" />
+      <TextField fx:id="favCharacterTextField" layoutX="423.0" layoutY="313.0" prefHeight="31.0" prefWidth="207.0" />
+      <Label layoutX="422.0" layoutY="109.0" text="Enter Anime Watched:">
+         <font>
+            <Font name="Gabriola" size="26.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" layoutX="423.0" layoutY="24.0" prefHeight="72.0" prefWidth="649.0" text="My Anime List">
+         <font>
+            <Font name="Constantia Bold Italic" size="58.0" />
+         </font>
+      </Label>
+      <Label layoutX="424.0" layoutY="195.0" text="What Date did you Start?">
+         <font>
+            <Font name="Gabriola" size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="423.0" layoutY="275.0" text="What was your Favorite Character?">
+         <font>
+            <Font name="Gabriola" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="loadDataButton" layoutX="590.0" layoutY="577.0" mnemonicParsing="false" onAction="#loadDataButton" prefHeight="35.0" prefWidth="134.0" text="Load Data">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveDataButton" layoutX="421.0" layoutY="579.0" mnemonicParsing="false" onAction="#saveDataButton" prefHeight="27.0" prefWidth="134.0" text="Save Data">
+         <font>
+            <Font name="Franklin Gothic Medium" size="17.0" />
+         </font>
+      </Button>
+      <Label fx:id="hiddenQuoteLabel" layoutX="748.0" layoutY="168.0" prefHeight="445.0" prefWidth="318.0" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
